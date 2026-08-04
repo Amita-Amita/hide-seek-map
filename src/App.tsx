@@ -14,8 +14,8 @@ function Test(x: {depth: string}) {
     }
   }
   return (
-    <div style={{color: cor, fontSize: "1.1em", lineHeight: "0.1em"}}>
-      Hello World!
+    <div style={{color: cor, fontSize: "1.05em", lineHeight: "0.1em"}}>
+      <b>Hello World!</b>
       { (y > 0) && 
          (<Test depth={''+(y-1)}/>)
        }
@@ -28,7 +28,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <p style={{fontSize: "1.5em"}}>
           {/* Edit <code>src/App.tsx</code> and save to reload. */}
           <Test depth="7" />
         </p>
